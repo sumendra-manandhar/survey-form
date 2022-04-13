@@ -4,7 +4,685 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <section class="card">
+      <div class="card__header grid">
+        <div class="logo grid">
+          <img src="" alt="" srcset="" />
+          <p>logo</p>
+        </div>
+        <div class="card__head grid">
+          <h2 class="card__head-title">
+            Feedbank and Complaint Form <br />
+            <span class="card__head-subtitle"
+              >( प्रतिक्रिया र उजुरी फारम )</span
+            >
+          </h2>
+        </div>
+      </div>
+
+      <div class="card__body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Parameters</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- question ------------------ -->
+            <tr>
+              <td>
+                1. Communication & Behaviour of Employees ? <br />
+                <span>( कर्मचारीहरूको सञ्चार र व्यवहार? )</span>
+              </td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question1"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question1"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question1"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question1"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question1"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor <br />
+                    धेरै नराम्रो</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>
+                2. Dress up and Overall Presentation of Employees ? <br />
+                <span> ( ड्रेस अप र कर्मचारीहरूको समग्र प्रस्तुति? )</span>
+              </td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question2"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question2"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question2"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question2"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question2"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>
+                3. Listening and Providing Solution of Complaints, if any ?
+                <br />
+                <span>( गुनासो सुन्ने र समाधान प्रदान गर्ने, यदि छ भने? )</span>
+              </td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question3"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question3"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question3"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question3"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question3"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>
+                4.Emplyee's Knowledge on Product and Services of the Bank ?
+              </td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question4"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question4"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question4"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question4"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question4"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>5. Waiting Duration for Service ?</td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question5"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question5"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question5"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question5"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question5"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>6. Availability of Range of Products and Services ?</td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question6"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question6"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question6"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question6"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question6"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor <br />
+                    धेरै नराम्रो</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>7. Features of Products & Services ?</td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question7"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question7"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question7"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question7"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question7"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor <br />
+                    धेरै नराम्रो</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>8. Overall Environment within the Bank ?</td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question8"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Excellent <br />
+                    उत्कृष्ट</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question8"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Very Good <br />
+                    धेरै राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question8"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Good <br />
+                    राम्रो</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question8"
+                    id="inlineRadio4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4"
+                    >Poor</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question8"
+                    id="inlineRadio5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="inlineRadio5"
+                    >Very Poor <br />
+                    धेरै नराम्रो</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>
+                9. If you have any issue, is it solved immediately by the
+                branch? ?
+              </td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question9"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question9"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+            <tr>
+              <td>
+                10. Does the branch staff have knowledge on the products &
+                services of the branch? ?
+              </td>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question10"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="question10"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+              </td>
+            </tr>
+
+            <!-- question ------------------ -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
 </html>
